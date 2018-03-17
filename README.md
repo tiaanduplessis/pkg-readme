@@ -1,5 +1,7 @@
 
 # pkg-readme
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/pkg-readme.svg)](https://greenkeeper.io/)
 [![package version](https://img.shields.io/npm/v/pkg-readme.svg?style=flat-square)](https://npmjs.org/package/pkg-readme)
 [![package downloads](https://img.shields.io/npm/dm/pkg-readme.svg?style=flat-square)](https://npmjs.org/package/pkg-readme)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
