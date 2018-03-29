@@ -13,7 +13,6 @@ module.exports = function template (opts = {name: '', license: '', description: 
 
 - [Install](#install)
 - [Usage](#usage)
-- [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#License)
 
