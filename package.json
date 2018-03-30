@@ -1,6 +1,6 @@
 {
     "name": "pkg-readme",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Generate a Standard Readme Style compliant README from your package.json",
     "main": "index.js",
     "repository": "https://github.com/tiaanduplessis/pkg-readme",
