@@ -21,7 +21,7 @@ module.exports = function template (opts = {name: '', license: '', description: 
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 \`\`\`sh
-$ npm installl ${opts.name}
+$ npm install ${opts.name}
 $ # OR
 $ yarn add ${opts.name}
 \`\`\`
