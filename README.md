@@ -12,7 +12,6 @@
 
 - [Install](#install)
 - [Usage](#usage)
-- [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#License)
 
@@ -21,7 +20,7 @@
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
-$ npm installl pkg-readme
+$ npm install pkg-readme
 $ # OR
 $ yarn add pkg-readme
 ```
