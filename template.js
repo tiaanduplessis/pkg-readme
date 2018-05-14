@@ -41,9 +41,9 @@ $
 ` : ''}
 ## Contribute
 
-1. Fork it and create your feature branch: git checkout -b my-new-feature
-2. Commit your changes: git commit -am 'Add some feature'
-3. Push to the branch: git push origin my-new-feature 
+1. Fork it and create your feature branch: `git checkout -b my-new-feature`
+2. Commit your changes: `git commit -am "Add some feature"`
+3. Push to the branch: `git push origin my-new-feature`
 4. Submit a pull request
 
 ## License
