@@ -7,7 +7,6 @@ $
 
 `
 
-
 module.exports = function template (opts = {name: '', license: '', description: '', example: '', bin: false}) {
   return `
 # ${opts.name}
