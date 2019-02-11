@@ -7,7 +7,7 @@ $
 
 `
 
-module.exports = function template (opts = {name: '', license: '', description: '', example: '', bin: false, author: '', repository: ''}) {
+module.exports = function template (opts = { name: '', license: '', description: '', example: '', bin: false, author: '', repository: '' }) {
   return `
 # ${opts.name}
 [![package version](https://img.shields.io/npm/v/${opts.name}.svg?style=flat-square)](https://npmjs.org/package/${opts.name})

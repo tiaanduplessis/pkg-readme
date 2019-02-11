@@ -5,7 +5,7 @@ test('should be a function', () => {
 })
 
 test('should generate a README string', async () => {
-  const str = await pkgReadme({name: 'foo', description: 'bar'})
+  const str = await pkgReadme({ name: 'foo', description: 'bar' })
   expect(str).toContain('foo')
   expect(str).toContain('bar')
 })
