@@ -20,10 +20,27 @@ module.exports = function template (opts = { name: '', license: '', description:
 
 ## Table of Contents
 
-- [Install](#install)
+- [About](#about)
+- [Features](#features)
 - [Usage](#usage)
+- [Install](#install)
 - [Contribute](#contribute)
 - [License](#License)
+
+## About
+
+Explain the problem the package is trying to solve.
+
+## Features
+
+- Name key features e.g. size, performance, how it differs from similar solutions etc.
+
+## Usage
+
+\`\`\`js
+${opts.example}
+\`\`\`
+${opts.bin ? cliTemplate : ''}
 
 ## Install
 
@@ -35,12 +52,6 @@ $ # OR
 $ yarn add ${opts.name}
 \`\`\`
 
-## Usage
-
-\`\`\`js
-${opts.example}
-\`\`\`
-${opts.bin ? cliTemplate : ''}
 ## Contribute
 
 1. Fork it and create your feature branch: \`git checkout -b my-new-feature\`
