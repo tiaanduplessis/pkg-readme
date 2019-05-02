@@ -8,6 +8,8 @@
     "license": "MIT",
     "bin": "cli.js",
     "scripts": {
+        "preversion": "yarn lint",
+        "postversion": "yarn publish",
         "lint": "standard --fix",
         "test": "npm run lint && jest"
     },
