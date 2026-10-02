@@ -16,7 +16,10 @@ generateReadme(args)
       return
     }
 
-    fs.writeFileSync(uri, str)
+    fs.writeFileSync(uri, str, { flag: 'wx' })
     console.log('🎉 Done generating README.md!')
   })
-  .catch(console.error)
+  .catch(error => {
+    console.error(error.message)
+    process.exitCode = 1
+  })
