@@ -49,6 +49,42 @@ Using the CLI (Same options):
 $ pkg-readme --license=FOOBAR
 ```
 
+### Generate a LICENSE file
+
+Pass the boolean `--license` flag to also create `LICENSE` in the current
+directory, using the existing `license` and `author` fields in the nearest
+`package.json`:
+
+```sh
+$ pkg-readme --license
+$ pkg-readme --license --year=2020
+```
+
+The API equivalent is `generateReadme({ license: true, year: 2020 })`. It still
+returns a Promise for the README string, and creates only the LICENSE file;
+the CLI also writes README.md. Without `license: true`, the API writes no files.
+An existing README is kept, and does not prevent generating a missing LICENSE.
+
+- Supported license identifiers are exactly `MIT`, `ISC`, `BSD-2-Clause`, and
+  `BSD-3-Clause`. Templates are bundled, so generation requires no network access.
+- The license comes only from `package.json`. A string such as `--license=MIT`
+  retains its original meaning: override the README's license text only.
+  `--no-license` disables file generation and keeps the package's README license.
+- Missing, unsupported, custom, legacy, or multiple-license declarations fail
+  rather than choosing a license. Handle SPDX expressions such as
+  `(MIT OR Apache-2.0)` manually.
+- `author` must be a nonempty name, either an npm author string or an object with
+  a `name` field. Email addresses and URLs in npm author strings are omitted.
+- The copyright year defaults to the current UTC year. Use `--year=YYYY` (or
+  `year` in the API) to provide a different four-digit year.
+- Existing LICENSE, LICENCE, or COPYING files, including case variants and
+  extensions, are never overwritten. Generation errors reject the API Promise
+  and cause the CLI to exit with a nonzero status.
+
+Review the generated copyright holder and year before distributing your project.
+This option does not select a license or modify package.json. See
+[template sources and notices](licenses/README.md) for attribution.
+
 ## Contribute
 
 1. Fork it and create your feature branch: git checkout -b my-new-feature
